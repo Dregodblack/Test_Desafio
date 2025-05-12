@@ -1,0 +1,200 @@
+[
+  {
+    "id": "realizar-gerenciamento-dos-funcionários",
+    "uri": "features/spec/test_cadastro.feature",
+    "keyword": "Funcionalidade",
+    "name": "Realizar gerenciamento dos Funcionários",
+    "description": "  Como administrador do sistema,\n  Quero gerenciar os dados dos funcionários,\n  Para garantir que as informações estejam atualizadas.",
+    "line": 19,
+    "tags": [
+      {
+        "name": "@regressivo",
+        "line": 17
+      },
+      {
+        "name": "@funcionalidade_gerenciamento_de_func",
+        "line": 18
+      }
+    ],
+    "elements": [
+      {
+        "keyword": "Contexto",
+        "name": "",
+        "description": "",
+        "line": 25,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que esteja na tela inicial",
+            "line": 26,
+            "match": {
+              "location": "features/step_definitions/steps_login.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3187703800
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "realizo o login com usuario \"Admin\" e senha \"admin123\"",
+            "line": 27,
+            "match": {
+              "location": "features/step_definitions/steps_login.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10207440800
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "valido que o login foi realizado com sucesso!",
+            "line": 28,
+            "match": {
+              "location": "features/step_definitions/steps_login.rb:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3223357600
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "sou direcionado para a tela de gerenciamento de funcionario",
+            "line": 29,
+            "match": {
+              "location": "features/step_definitions/steps_cadastro.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4304538000
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25900
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3927209000
+            }
+          }
+        ]
+      },
+      {
+        "id": "realizar-gerenciamento-dos-funcionários;excluir-um-funcionario;;2",
+        "keyword": "Cenário",
+        "name": "Excluir um funcionario",
+        "description": "",
+        "line": 71,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "realizo a busca por um funcionario \"Admin\" e \"0439\" existente",
+            "line": 65,
+            "match": {
+              "location": "features/step_definitions/steps_cadastro.rb:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13455614300
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "valido que o funcionario \"Admin\" e \"0439\" é apresentado com sucesso!",
+            "line": 66,
+            "match": {
+              "location": "features/step_definitions/steps_cadastro.rb:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3351653400
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "realizo a exclusao de um funcionario existente",
+            "line": 67,
+            "match": {
+              "location": "features/step_definitions/steps_cadastro.rb:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12748606900
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "valido que o funcionario foi excluido com sucesso!",
+            "line": 68,
+            "match": {
+              "location": "features/step_definitions/steps_cadastro.rb:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9608483500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regressivo",
+            "line": 17
+          },
+          {
+            "name": "@funcionalidade_gerenciamento_de_func",
+            "line": 18
+          },
+          {
+            "name": "@excluir_funcionario_existente",
+            "line": 63
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 228850100
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 179500
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

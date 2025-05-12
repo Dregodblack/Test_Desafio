@@ -1,0 +1,13 @@
+##################################################################################################################################
+# Autor: Andre Luis
+# Decrição: Esse arquivo serve para personalizar formas de execução do Cucumber, ou seja, com formatos, relatórios e configurações específicas.
+##################################################################################################################################
+
+---                                                               # inicio do arquivo yml
+  default: -p pretty -p chrome -p html -p json                    # Atribuição de perfis (-p = profile)
+
+  chrome: BROWSER=chrome                                          # Define uma variável de ambiente que usa o driver do Chrome
+  html: --format html --out=report/relatorio/report.html          # Gera um relatório em HTML
+  json: --format json --out=report/relatorio/report.json          # Gera um relatório em JSON
+  junit: --format junit --out=report/relatorio/junit.xml          # Gera um relatório em JUnit
+  pretty: --format pretty                                         # Exibe um resultado dos testes de forma organizada no terminal
