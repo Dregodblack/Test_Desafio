@@ -79,6 +79,7 @@ module Helper
         else
             campo.send_keys(texto)
         end
+        # campo.send_keys(texto)
         captura_de_tela
     end
 

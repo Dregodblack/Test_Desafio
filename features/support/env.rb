@@ -23,9 +23,10 @@ require 'selenium-webdriver'
 require 'pry'
 require 'webdrivers'
 require 'fileutils'
+# require 'faker'
 
 # Carrega todos os arquivos Ruby dentro da pasta support/ e subpastas
-Dir.glob(File.join(File.dirname(__FILE__), '**', '*.rb')).each { |file| require file } # antigo
+Dir.glob(File.join(File.dirname(__FILE__), '**', '*.rb')).each { |file| require file }
 # Dir[File.join(File.dirname(__FILE__), '**', '*.rb')].sort.each { |file| require file }
 
 
@@ -47,3 +48,15 @@ Capybara.configure do |config|
   config.app_host = 'https://opensource-demo.orangehrmlive.com'
   config.default_max_wait_time = 15
 end
+
+# # variáveis globais 
+
+# $nome_completo_faker = Faker::Name.name.capitalize
+# $primeiro_nome_faker = Faker::Name.first_name.capitalize
+# $nome_do_meio_faker = Faker::Name.middle_name.capitalize
+# $sobrenome_faker = Faker::Name.last_name.capitalize
+# $cpf_faker = Faker::CPF.pretty
+# $data_atual = Time.now.strftime('%d/%m/%Y')
+# $valor_id = Faker::Number.number(digits: 5)
+# $usuario_faker = "#{Faker::Name.first_name.downcase}#{Faker::Number.number(digits: 4)}"
+# $senha_faker = "@#{Faker::Name.first_name.capitalize}#{Faker::Number.number(digits: 4)}"

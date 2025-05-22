@@ -42,7 +42,7 @@ Cenário: Validar busca de um funcionario
     Entao valido que o funcionario <funcionario> e <id> é apresentado com sucesso!
     Exemplos:
     |funcionario|id     |
-    |"Admin"    |"0011" |
+    |"A.T."     |"AT001"|
 # Obs: Se a busca não achar os parametros é porque o proprio sistema apagou do banco de dados, recomendável que pesquise antes manualmente para validar que os dados da automação existem, se não, pesquise por novos dados
 # Obs: Aqui também existe duas opções para contornar, pesquisa via banco de dados, ou geração de novos dados antes da sua execução 
 
@@ -55,7 +55,7 @@ Cenário: Editar dados de um funcionario
     Entao valido que os dados <novos_dados> foram atualizados com sucesso!
     Exemplos:
     |funcionario|id     |novos_dados|
-    |"Admin"    |"0011" |"TesteQA"  |
+    |"A.T."     |"AT001"|"TesteQA"  |
 # Obs: Se a busca não achar os parametros é porque o proprio sistema apagou do banco de dados, recomendável que pesquise antes manualmente para validar que os dados da automação existem, se não, pesquise por novos dados
 # Obs: Aqui também existe duas opções para contornar, pesquisa via banco de dados, ou geração de novos dados antes da sua execução 
 
@@ -68,6 +68,6 @@ Cenário: Excluir um funcionario
     Entao valido que o funcionario foi excluido com sucesso!
     Exemplos:
     |funcionario|id     |
-    |"Admin"    |"0011" |
+    |"A.T."     |"AT001"|
 # Obs: Se a busca não achar os parametros é porque o proprio sistema apagou do banco de dados, recomendável que pesquise antes manualmente para validar que os dados da automação existem, se não, pesquise por novos dados
 # Obs: Aqui também existe duas opções para contornar, pesquisa via banco de dados, ou geração de novos dados antes da sua execução 

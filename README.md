@@ -33,6 +33,7 @@
         gem 'webdrivers'                        # baixa a versão atual automaticamente do chromedriver
         gem 'cucumber-screenshot'               # Gera screenshot de tela que apoia no relatório HTML
 
+
 - execute "bundle install" no terminal
         Obs: sempre que adicionar uma nova "gem" no arquivo "Gemfile" execute -->> bundle install no terminal
 
@@ -40,7 +41,7 @@
 
         [features]                              # Pasta criada
         - step_definitions                      # Aqui ficam os arquivos Ruby com as definições dos passos dos testes
-        - support/                              # Aqui contém arquivos de configuração, como hooks e environment
+        - support/                              # Aqui contém arquivos de configuração, como Ambiente, drivers e hooks 
 
 - posteriormente, crie essas sub-pastas dentro da pasta "features":
 
@@ -64,8 +65,7 @@
         - cucumber.yml                          # personalizar formas de execução do Cucumber
         - README.md                             # Documentação com instruções
 
-##
-<!--############################################################################################ -->
+## <!--############################################################################################ -->
 
 <h4> Teste executado nessa URL: </h4>
 
@@ -139,8 +139,6 @@
         - cucumber-html-formatter:     - usada para gerar relatórios HTML
         - cucumber-screenshot:         - Gera screenshots de tela que apoiam no relatório HTML da execução
         - fileutils:                   - serve para manipular arquivos e diretórios (Cria a pastas, Copia arquivo, Remove arquivo) e etc...
-
-        - cpf_cnpj: gera/valida CPFs e CNPJs brasileiros.
 
 <h4> Bibliotecas instaladas: </h4> 
 
