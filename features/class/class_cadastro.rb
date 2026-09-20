@@ -14,12 +14,12 @@ class CadastroPage < BasePage
         clicar_no_elemento(*BOTAO_ADDC_FUNC)
         validar_texto("Add Employee")
         validar_elemento(*IMG_USER)
-        preencher_texto(*CAMPO_PRIMEIRO_NOME, "primeiro_nome_Faker")
-        preencher_texto(*CAMPO_NOME_DO_MEIO, "nome_do_meio_Faker")
-        preencher_texto(*CAMPO_SOBRENOME, "sobrenome_Faker")
-        preencher_texto(*CAMPO_ID_FUNCIONARIO, "valor_ID")
+        preencher_texto(*CAMPO_PRIMEIRO_NOME, $primeiro_nome_faker)
+        preencher_texto(*CAMPO_NOME_DO_MEIO, $nome_do_meio_faker)
+        preencher_texto(*CAMPO_SOBRENOME, $sobrenome_faker)
+        preencher_texto(*CAMPO_ID_FUNCIONARIO, $valor_id)
         clicar_no_elemento(*SELECT_ATIVAR_DETALHES)
-        preencher_texto(*CAMPO_NOME_DO_USER, "usuario_Faker")
+        preencher_texto(*CAMPO_NOME_DO_USER, $usuario_faker)
         # STATUS = default Habilitado
         preencher_texto(*CAMPO_SENHA_CADASTRO, "@Senha1234")    # senha_Faker
         preencher_texto(*CAMPO_CONFIRM_SENHA_CADASTRO, "@Senha1234")    # senha_Faker

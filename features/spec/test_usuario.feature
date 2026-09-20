@@ -29,7 +29,7 @@ Contexto:
 
 
 # O "Esquema do Cenário" serve para Cenários que testam a mesma funcionalidade com diferentes entradas.
-@validar_direcionamentos
+@validar_direcionamentos_deslogado
 Esquema do Cenário: Validar direcionamento para meios de comunicação
     Quando clico no ícone de plataforma <plataforma>
     Entao valido que sou redirecionado para a página da plataforma <plataforma>
@@ -39,6 +39,16 @@ Esquema do Cenário: Validar direcionamento para meios de comunicação
     | Facebook   |
     | Twitter    |
     | YouTube    |
+
+
+@validar_redefinir_senha_deslogado
+Cenário: validar redefinição de senha na tela de login
+    Quando clico em esqueceu sua senha na tela de login
+    E preencho os dados para autenticação do usuario <usuario> que solicita a redefinição
+    Entao valido que a mensagem <mensagem> de redefinição de senha é apresentada com sucesso!
+    Exemplos:
+    |usuario|mensagem                               |
+    |"Admin"|"Reset Password link sent successfully"|
 
 
 @alterar_senha_do_usuario

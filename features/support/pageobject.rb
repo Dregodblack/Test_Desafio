@@ -3,12 +3,12 @@
 # Decrição: Esse arquivo centraliza e configura todas as classes, e  serve como ponto de referência para importá-las
 ##################################################################################################################################
 
-# Essa "class BasePage" faz parte da estrutura orientada a objetos e evita repetir código em todas as páginas
-# ├── class BasePage =>> É uma base para todas as outras páginas do sistema, ou seja, todas as outras classes podem herdar
-# └── include Capybara::DSL =>>  Permite usar os comandos do Capybara dentro da sua classe
-
+# Aqui carrega todos os arquivos Ruby dentro da pasta support/ e subpastas se houver...
 Dir.glob(File.join(File.dirname(__FILE__), '**', '*.rb')).each { |file| require file }
 
+
+# Essa "class BasePage" abaixo faz parte da estrutura orientada a objetos e evita repetir código em todas as páginas
+# └── class BasePage =>> É uma base para todas as outras páginas do sistema, ou seja, todas as outras classes podem herdar
 class BasePage
   include Capybara::DSL             # Para utilizar elementos do Capybara
   include Helper                    # Para utilizar funções configuradas
@@ -16,7 +16,7 @@ class BasePage
 end
 
 
-# Carrega as classes de dentro da pasta class herdando da "class BasePage"
+# Carrega as classes de dentro da pasta class herdando de "class BasePage"
 class PageObjects
         
   def funcao_Login

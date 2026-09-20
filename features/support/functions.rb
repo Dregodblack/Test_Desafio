@@ -43,43 +43,44 @@ module Helper
     def preencher_texto(tipo, elemento, texto)
         campo = clicar_no_elemento(tipo, elemento).send_keys([:control, 'a'], :backspace)  # limpando caracteres dentro do campo selecionado!
 
-        if texto == "nome_completo_Faker"
-            campo.send_keys(Faker::Name.name.capitalize)
+        # if texto == "nome_completo_Faker"
+        #     campo.send_keys(Faker::Name.name.capitalize)
 
-        elsif texto == "primeiro_nome_Faker"
-            campo.send_keys(Faker::Name.first_name.capitalize)
+        # elsif texto == "primeiro_nome_Faker"
+        #     campo.send_keys(Faker::Name.first_name.capitalize)
 
-        elsif texto == "nome_do_meio_Faker"
-            campo.send_keys(Faker::Name.middle_name.capitalize)
+        # elsif texto == "nome_do_meio_Faker"
+        #     campo.send_keys(Faker::Name.middle_name.capitalize)
 
-        elsif texto == "sobrenome_Faker"
-            campo.send_keys(Faker::Name.last_name.capitalize)
+        # elsif texto == "sobrenome_Faker"
+        #     campo.send_keys(Faker::Name.last_name.capitalize)
 
-        elsif texto == "cpf_Faker"
-            campo.send_keys(Faker::CPF.pretty)
+        # elsif texto == "cpf_Faker"
+        #     campo.send_keys(Faker::CPF.pretty)
 
-        elsif texto == 'data_atual'
-            campo.send_keys(Time.now.strftime('%d/%m/%Y'))
+        # elsif texto == 'data_atual'
+        #     campo.send_keys(Time.now.strftime('%d/%m/%Y'))
 
-        elsif texto == 'valor_ID'
-            campo.send_keys(Faker::Number.number(digits: 5))
+        # elsif texto == 'valor_ID'
+        #     campo.send_keys(Faker::Number.number(digits: 5))
 
-        elsif texto == 'usuario_Faker'
-            usuario_name = Faker::Name.first_name.downcase
-            usuario_ID = Faker::Number.number(digits: 4)
-            usuario_customizado = "#{usuario_name}#{usuario_ID}"
-            campo.send_keys(usuario_customizado)
+        # elsif texto == 'usuario_Faker'
+        #     usuario_name = Faker::Name.first_name.downcase
+        #     usuario_ID = Faker::Number.number(digits: 4)
+        #     usuario_customizado = "#{usuario_name}#{usuario_ID}"
+        #     campo.send_keys(usuario_customizado)
 
-        elsif texto == 'senha_Faker'
-            usuario_name = Faker::Name.first_name.capitalize
-            usuario_ID = Faker::Number.number(digits: 4)
-            senha_customizada = "@#{usuario_name}#{usuario_ID}"
-            campo.send_keys(senha_customizada)
+        # elsif texto == 'senha_Faker'
+        #     usuario_name = Faker::Name.first_name.capitalize
+        #     usuario_ID = Faker::Number.number(digits: 4)
+        #     senha_customizada = "@#{usuario_name}#{usuario_ID}"
+        #     campo.send_keys(senha_customizada)
 
-        else
-            campo.send_keys(texto)
-        end
-        # campo.send_keys(texto)
+        # else
+        #     campo.send_keys(texto)
+        # end
+        
+        campo.send_keys(texto)
         captura_de_tela
     end
 

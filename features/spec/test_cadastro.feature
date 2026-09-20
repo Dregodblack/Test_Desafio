@@ -41,8 +41,8 @@ Cenário: Validar busca de um funcionario
     Quando realizo a busca por um funcionario <funcionario> e <id> existente
     Entao valido que o funcionario <funcionario> e <id> é apresentado com sucesso!
     Exemplos:
-    |funcionario|id     |
-    |"A.T."     |"AT001"|
+    |funcionario |id        |
+    |"Busca_User"|"Busca_Id"|
 # Obs: Se a busca não achar os parametros é porque o proprio sistema apagou do banco de dados, recomendável que pesquise antes manualmente para validar que os dados da automação existem, se não, pesquise por novos dados
 # Obs: Aqui também existe duas opções para contornar, pesquisa via banco de dados, ou geração de novos dados antes da sua execução 
 
@@ -54,8 +54,8 @@ Cenário: Editar dados de um funcionario
     E altero os dados de um funcionario existente adicionando um novo dado <novos_dados>
     Entao valido que os dados <novos_dados> foram atualizados com sucesso!
     Exemplos:
-    |funcionario|id     |novos_dados|
-    |"A.T."     |"AT001"|"TesteQA"  |
+    |funcionario |id        |novos_dados|
+    |"Busca_User"|"Busca_Id"|"TesteQA"  |
 # Obs: Se a busca não achar os parametros é porque o proprio sistema apagou do banco de dados, recomendável que pesquise antes manualmente para validar que os dados da automação existem, se não, pesquise por novos dados
 # Obs: Aqui também existe duas opções para contornar, pesquisa via banco de dados, ou geração de novos dados antes da sua execução 
 
@@ -67,7 +67,7 @@ Cenário: Excluir um funcionario
     E realizo a exclusao de um funcionario existente
     Entao valido que o funcionario foi excluido com sucesso!
     Exemplos:
-    |funcionario|id     |
-    |"A.T."     |"AT001"|
+    |funcionario |id        |
+    |"Busca_User"|"Busca_Id"|
 # Obs: Se a busca não achar os parametros é porque o proprio sistema apagou do banco de dados, recomendável que pesquise antes manualmente para validar que os dados da automação existem, se não, pesquise por novos dados
 # Obs: Aqui também existe duas opções para contornar, pesquisa via banco de dados, ou geração de novos dados antes da sua execução 

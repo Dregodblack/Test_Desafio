@@ -7,7 +7,7 @@
 #   ├── Configurações globais (como tempo de espera padrão, ou definição de ações antes ou depois de cada cenário)
 #   ├── Inicializações que valem para todos os testes
 #   ├── Configurações do Capybara, drivers de browser e timeout
-#   └── Variáveis de ambiente
+#   └── Variáveis de ambiente e globais
 
 ##################################################################################################################################
 
@@ -23,12 +23,10 @@ require 'selenium-webdriver'
 require 'pry'
 require 'webdrivers'
 require 'fileutils'
-# require 'faker'
+require 'faker'
 
-# Carrega todos os arquivos Ruby dentro da pasta support/ e subpastas
+# Aqui carrega todos os arquivos Ruby dentro da pasta support/ e subpastas se houver...
 Dir.glob(File.join(File.dirname(__FILE__), '**', '*.rb')).each { |file| require file }
-# Dir[File.join(File.dirname(__FILE__), '**', '*.rb')].sort.each { |file| require file }
-
 
 # Aqui está incluindo o (Capybara::DSL) e (Capybara::RSpecMatchers) que  permite usar comandos e matchers 
 RSpec.configure do |config|
@@ -49,14 +47,15 @@ Capybara.configure do |config|
   config.default_max_wait_time = 15
 end
 
-# # variáveis globais 
 
-# $nome_completo_faker = Faker::Name.name.capitalize
-# $primeiro_nome_faker = Faker::Name.first_name.capitalize
-# $nome_do_meio_faker = Faker::Name.middle_name.capitalize
-# $sobrenome_faker = Faker::Name.last_name.capitalize
-# $cpf_faker = Faker::CPF.pretty
-# $data_atual = Time.now.strftime('%d/%m/%Y')
-# $valor_id = Faker::Number.number(digits: 5)
-# $usuario_faker = "#{Faker::Name.first_name.downcase}#{Faker::Number.number(digits: 4)}"
-# $senha_faker = "@#{Faker::Name.first_name.capitalize}#{Faker::Number.number(digits: 4)}"
+# variáveis globais 
+
+$nome_completo_faker = Faker::Name.name.capitalize
+$primeiro_nome_faker = Faker::Name.first_name.capitalize
+$nome_do_meio_faker = Faker::Name.middle_name.capitalize
+$sobrenome_faker = Faker::Name.last_name.capitalize
+$cpf_faker = Faker::CPF.pretty
+$data_atual = Time.now.strftime('%d/%m/%Y')
+$valor_id = Faker::Number.number(digits: 5)
+$usuario_faker = "#{Faker::Name.first_name.downcase}#{Faker::Number.number(digits: 4)}"
+$senha_faker = "@#{Faker::Name.first_name.capitalize}#{Faker::Number.number(digits: 4)}"

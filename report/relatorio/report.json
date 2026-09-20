@@ -33,7 +33,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3165651400
+              "duration": 3192982100
             }
           },
           {
@@ -45,7 +45,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11227090300
+              "duration": 11172802100
             }
           },
           {
@@ -57,7 +57,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3201791600
+              "duration": 3188658800
             }
           },
           {
@@ -68,9 +68,8 @@
               "location": "features/step_definitions/steps_cadastro.rb:7"
             },
             "result": {
-              "status": "failed",
-              "error_message": "O texto: 'Employee Information' não foi encontrado conforme esperado! (RuntimeError)\n./features/support/functions.rb:26:in 'Helper#validar_texto'\n./features/class/class_cadastro.rb:10:in 'CadastroPage#validar_tela_de_gerenciamento'\n./features/step_definitions/steps_cadastro.rb:8:in 'block in <top (required)>'\nC:/Users/Usuario/AppData/Local/Microsoft/WindowsApps/cucumber:36:in 'Kernel#load'\nC:/Users/Usuario/AppData/Local/Microsoft/WindowsApps/cucumber:36:in '<main>'\nfeatures/spec/test_cadastro.feature:29:in `sou direcionado para a tela de gerenciamento de funcionario'",
-              "duration": 19387495300
+              "status": "passed",
+              "duration": 4479037900
             }
           }
         ],
@@ -81,7 +80,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 31600
+              "duration": 30300
             }
           },
           {
@@ -90,7 +89,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23400
+              "duration": 24800
             }
           },
           {
@@ -99,157 +98,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4314418400
-            }
-          }
-        ]
-      },
-      {
-        "id": "realizar-gerenciamento-dos-funcionários;cadastrar-novo-funcionario",
-        "keyword": "Cenário",
-        "name": "Cadastrar novo funcionario",
-        "description": "",
-        "line": 33,
-        "type": "scenario",
-        "steps": [
-          {
-            "keyword": "Quando ",
-            "name": "realizo o cadastro de um novo funcionario",
-            "line": 34,
-            "match": {
-              "location": "features/step_definitions/steps_cadastro.rb:13"
-            },
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "keyword": "Entao ",
-            "name": "valido que o funcionario é cadastrado com sucesso!",
-            "line": 35,
-            "match": {
-              "location": "features/step_definitions/steps_cadastro.rb:17"
-            },
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@regressivo",
-            "line": 17
-          },
-          {
-            "name": "@funcionalidade_gerenciamento_de_func",
-            "line": 18
-          },
-          {
-            "name": "@cadastrar_novo_funcionario",
-            "line": 32
-          }
-        ],
-        "after": [
-          {
-            "match": {
-              "location": "features/support/hooks.rb:43"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 358099600
-            }
-          },
-          {
-            "match": {
-              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 53700
-            }
-          }
-        ]
-      },
-      {
-        "keyword": "Contexto",
-        "name": "",
-        "description": "",
-        "line": 25,
-        "type": "background",
-        "steps": [
-          {
-            "keyword": "Dado ",
-            "name": "que esteja na tela inicial",
-            "line": 26,
-            "match": {
-              "location": "features/step_definitions/steps_login.rb:12"
-            },
-            "result": {
-              "status": "failed",
-              "error_message": "exit (SystemExit)\n./features/support/functions.rb:14:in 'Kernel#sleep'\n./features/support/functions.rb:14:in 'Helper#esperar'\n./features/support/functions.rb:31:in 'Helper#validar_elemento'\n./features/class/class_login.rb:9:in 'LoginPage#validacao_page'\n./features/step_definitions/steps_login.rb:13:in 'block in <top (required)>'\nC:/Users/Usuario/AppData/Local/Microsoft/WindowsApps/cucumber:36:in 'Kernel#load'\nC:/Users/Usuario/AppData/Local/Microsoft/WindowsApps/cucumber:36:in '<main>'\nfeatures/spec/test_cadastro.feature:26:in `que esteja na tela inicial'",
-              "duration": 1588768900
-            }
-          },
-          {
-            "keyword": "Quando ",
-            "name": "realizo o login com usuario \"Admin\" e senha \"admin123\"",
-            "line": 27,
-            "match": {
-              "location": "features/step_definitions/steps_login.rb:16"
-            },
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "keyword": "Entao ",
-            "name": "valido que o login foi realizado com sucesso!",
-            "line": 28,
-            "match": {
-              "location": "features/step_definitions/steps_login.rb:20"
-            },
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "keyword": "E ",
-            "name": "sou direcionado para a tela de gerenciamento de funcionario",
-            "line": 29,
-            "match": {
-              "location": "features/step_definitions/steps_cadastro.rb:7"
-            },
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ],
-        "before": [
-          {
-            "match": {
-              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 40100
-            }
-          },
-          {
-            "match": {
-              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 41700
-            }
-          },
-          {
-            "match": {
-              "location": "features/support/hooks.rb:34"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3798309100
+              "duration": 4814759100
             }
           }
         ]
@@ -264,24 +113,27 @@
         "steps": [
           {
             "keyword": "Quando ",
-            "name": "realizo a busca por um funcionario \"A.T.\" e \"AT001\" existente",
+            "name": "realizo a busca por um funcionario \"Busca_User\" e \"Busca_Id\" existente",
             "line": 41,
             "match": {
               "location": "features/step_definitions/steps_cadastro.rb:23"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 13358925900
             }
           },
           {
             "keyword": "Entao ",
-            "name": "valido que o funcionario \"A.T.\" e \"AT001\" é apresentado com sucesso!",
+            "name": "valido que o funcionario \"Busca_User\" e \"Busca_Id\" é apresentado com sucesso!",
             "line": 42,
             "match": {
-              "location": "features/step_definitions/steps_cadastro.rb:27"
+              "location": "features/step_definitions/steps_cadastro.rb:29"
             },
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "error_message": "undefined method 'scan' for nil (NoMethodError)\n./features/support/functions.rb:22:in 'Helper#validar_texto'\n./features/class/class_cadastro.rb:44:in 'CadastroPage#validar_busca'\n./features/step_definitions/steps_cadastro.rb:30:in 'block in <top (required)>'\nC:/Users/Usuario/AppData/Local/Microsoft/WindowsApps/cucumber:36:in 'Kernel#load'\nC:/Users/Usuario/AppData/Local/Microsoft/WindowsApps/cucumber:36:in '<main>'\nfeatures/spec/test_cadastro.feature:45:42:in `valido que o funcionario \"Busca_User\" e \"Busca_Id\" é apresentado com sucesso!'",
+              "duration": 7406005000
             }
           }
         ],
@@ -306,7 +158,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2059572900
+              "duration": 395948300
             }
           },
           {
@@ -315,7 +167,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 90400
+              "duration": 81400
             }
           }
         ]

@@ -21,6 +21,8 @@ end
 
 # Busca por funcionario
 Quando('realizo a busca por um funcionario {string} e {string} existente') do |funcionario, id|
+    funcionario = $primeiro_nome_faker if funcionario == "Busca_User"
+    id = $valor_id if id == "Busca_Id"
     pagina.funcao_Cadastro.efetuar_busca(funcionario, id)
 end
 
